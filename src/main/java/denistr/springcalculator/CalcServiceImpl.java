@@ -9,22 +9,22 @@ public class CalcServiceImpl implements CalcService {
         return "Добро пожаловать в калькулятор";
     }
     @Override
-    public String calcPlus(int a, int b) {
-        return a + " + " + b + " = " + (a + b);
+    public int calcPlus(int a, int b) {
+        return a + b;
     }
 
     @Override
-    public String calcMinus(int a, int b) {
-        return a + " - " + b + " = " + (a - b);
+    public int calcMinus(int a, int b) {
+        return a - b;
     }
     @Override
-    public String calcMultiply(int a, int b) {
-        return a + " * " + b + " = " + (a * b);
+    public int calcMultiply(int a, int b) {
+        return a * b;
     }
 
     @Override
-    public String calcDivide(int a, int b) {
-        return a + " / " + b + " = " + (a / b);
+    public int calcDivide(int a, int b) {
+        return a / b;
     }
 
 }

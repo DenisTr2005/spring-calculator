@@ -2,8 +2,8 @@ package denistr.springcalculator;
 
 public interface CalcService {
     String helloCalc();
-    String calcPlus(int a, int b);
-    String calcMinus(int a, int b);
-    String calcMultiply(int a, int b);
-    String calcDivide(int a, int b);
+    int calcPlus(int a, int b);
+    int calcMinus(int a, int b);
+    int calcMultiply(int a, int b);
+    int calcDivide(int a, int b);
 }

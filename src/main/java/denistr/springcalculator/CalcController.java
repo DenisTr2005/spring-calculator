@@ -19,18 +19,18 @@ public class CalcController {
     }
     @GetMapping(path = "/plus")
     public String calcPlus(@RequestParam ("num1")  int a, @RequestParam("num2") int b) {
-        return calcService.calcPlus(a, b);
+        return a + " + " + b + " = " + calcService.calcPlus(a, b);
     }
     @GetMapping(path = "/minus")
     public String calcMinus(@RequestParam ("num1")  int a, @RequestParam("num2") int b) {
-        return calcService.calcMinus(a, b);
+        return a + " - " + b + " = " + calcService.calcMinus(a, b);
     }
     @GetMapping(path = "/multiply")
     public String calcMultiply(@RequestParam ("num1")  int a, @RequestParam("num2") int b) {
-        return calcService.calcMultiply(a, b);
+        return a + " * " + b + " = " + calcService.calcMultiply(a, b);
     }
     @GetMapping(path = "/divide")
     public String calcDivide(@RequestParam ("num1")  int a, @RequestParam("num2") int b) {
-        return calcService.calcDivide(a, b);
+        return a + " / " + b + " = " + calcService.calcDivide(a, b);
     }
 }

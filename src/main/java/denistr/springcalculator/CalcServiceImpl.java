@@ -15,13 +15,6 @@ public class CalcServiceImpl implements CalcService {
     @Override
     public int calcMultiply(int a, int b) { return a * b; }
     @Override
-    public boolean checkZero(int b) {
-        if (b == 0) {
-            return true;
-        }
-        return false;
-    }
-    @Override
     public int calcDivide(int a, int b) { return a / b; }
 
 }

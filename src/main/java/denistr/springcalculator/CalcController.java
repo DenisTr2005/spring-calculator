@@ -29,8 +29,12 @@ public class CalcController {
     public String calcMultiply(@RequestParam ("num1")  int a, @RequestParam("num2") int b) {
         return a + " * " + b + " = " + calcService.calcMultiply(a, b);
     }
+
     @GetMapping(path = "/divide")
-    public String calcDivide(@RequestParam ("num1")  int a, @RequestParam("num2") int b) {
+    public String calcDivide(@RequestParam("num1") int a, @RequestParam("num2") int b) {
+        if (calcService.checkZero(b)) {
+            return "Нельзя делить на 0";
+        }
         return a + " / " + b + " = " + calcService.calcDivide(a, b);
     }
 }

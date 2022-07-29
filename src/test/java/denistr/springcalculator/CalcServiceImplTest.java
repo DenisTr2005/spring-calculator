@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalcServiceImplTest {
-    private final CalcServiceImpl out = new CalcServiceImpl();
+    private final CalcService out = new CalcServiceImpl();
     private final String HELLO = "Добро пожаловать в калькулятор";
     private static int a1, b1, a2, b2;
     @BeforeAll
